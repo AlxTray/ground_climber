@@ -14,7 +14,7 @@ import io.github.alxtray.groundclimber.enums.LogLevel;
 import io.github.alxtray.groundclimber.utilities.AssetLibrary;
 import io.github.alxtray.groundclimber.utilities.Logger;
 
-public class MenuScreen implements Screen {
+public class BaseScreen implements Screen {
     private static final float TITLE_MOVE_AMOUNT = 1.4f;
     private static final float TITLE_WIDTH_FACTOR = 0.4f;
     private static final float TITLE_HEIGHT_FACTOR = 0.2f;
@@ -36,7 +36,7 @@ public class MenuScreen implements Screen {
     private final Texture backgroundImage;
     private float currentTitleY;
 
-    public MenuScreen(Core game, String titleImageName, String backgroundImageName, int buttonHeightFactor, int buttonWidthFactor) {
+    public BaseScreen(Core game, String titleImageName, String backgroundImageName, int buttonHeightFactor, int buttonWidthFactor) {
         this.game = game;
 
         batch = new SpriteBatch();

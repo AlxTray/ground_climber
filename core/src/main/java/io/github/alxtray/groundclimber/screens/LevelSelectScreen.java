@@ -17,7 +17,7 @@ import io.github.alxtray.groundclimber.utilities.ButtonBuilder;
 import io.github.alxtray.groundclimber.utilities.Logger;
 import text.formic.Stringf;
 
-public class LevelSelectScreen extends MenuScreen {
+public class LevelSelectScreen extends BaseScreen {
     private static final String TITLE_IMAGE_NAME = "level_title_text";
     private static final String BACKGROUND_IMAGE_NAME = "menu_background";
     private static final int BUTTON_HEIGHT_FACTOR = 10;
